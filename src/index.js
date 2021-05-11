@@ -1,6 +1,6 @@
-import readline from 'readline'
-import { JwtSecretGenerator } from './JwtSecretGenerator.js'
-import { FileWriter } from './FileWriter.js'
+const readline = require('readline')
+const JwtSecretGenerator = require('./JwtSecretGenerator')
+const FileWriter = require('./FileWriter')
 
 const jwtSecretGenerator = new JwtSecretGenerator()
 
@@ -45,6 +45,7 @@ const steps = {
     return steps.end()
   },
   end: async () => {
+    const end = await question('')
     rl.close();
   },
 };

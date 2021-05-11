@@ -1,4 +1,4 @@
-import crypto from 'crypto'
+const crypto = require('crypto')
 
 class JwtSecretGenerator {
   constructor() { }
@@ -17,4 +17,4 @@ class JwtSecretGenerator {
   }
 }
 
-export { JwtSecretGenerator }
+module.exports = JwtSecretGenerator

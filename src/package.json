@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "simple generator of jwt secret",
   "main": "index.js",
-  "type": "module",
+  "bin": "index.js",
+  "pkg": {
+    "assets": [ "node_modules/**/*", "src/**/*" ],
+    "targets": [ "node10-win-x64" ]
+  },
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js"

@@ -1,16 +1,14 @@
-import fs from 'fs'
-import path from 'path'
+const fs = require('fs')
+const path = require('path')
 
 class FileWriter {
-  #__dirname
-
   constructor() {
-    this.#__dirname = path.resolve()
+    this.__dirname = path.resolve()
   }
 
   writeText(fileName, text) {
-    fs.writeFileSync(path.resolve(this.#__dirname, fileName), text)
+    fs.writeFileSync(path.resolve(this.__dirname, fileName), text)
   }
 }
 
-export { FileWriter }
+module.exports = FileWriter
