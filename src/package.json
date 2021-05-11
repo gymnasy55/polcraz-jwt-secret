@@ -1,0 +1,32 @@
+{
+  "name": "polcraz-jwt-secret",
+  "version": "1.0.0",
+  "description": "simple generator of jwt secret",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gymnasy55/polcraz-jwt-secret.git"
+  },
+  "keywords": [
+    "jwt",
+    "polcraz",
+    "jwt-secret"
+  ],
+  "author": "polcraz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gymnasy55/polcraz-jwt-secret/issues"
+  },
+  "homepage": "https://github.com/gymnasy55/polcraz-jwt-secret",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "crypto": "^1.0.1"
+  }
+}
