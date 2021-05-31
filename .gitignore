@@ -80,6 +80,3 @@ typings/
 
 # VS Code
 .vscode/
-
-# Build
-build/
